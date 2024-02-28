@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Maxi</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+ 
+    <section class="contact">
+        <h2>Contact me</h2>
+ 
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" id="name"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input-field">
+                    <input type="email" placeholder="Email Adresse" id="email"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Email Adress can't be blank</div>
+                </div>
+            </div>
+ 
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Phone Number" id="phone"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Subject" id="subject"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
+            </div>
+ 
+            <div class="textarea-field">
+                <textarea name="" id="message" cols="30" rows="10"
+                placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <div class=".error-txt"></div>
+            </div>
+ 
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </section>
+ 
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+           
+ 
+</body>
+</html>

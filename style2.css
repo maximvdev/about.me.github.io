@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+}
+ 
+.contact h2{
+    font-size: 40px;
+    color: #ededed;
+    text-align: center;
+    margin-bottom: 10px;
+}
+ 
+.contact form {
+    width: 600px;
+    text-align: center;
+}
+ 
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.input-field .item{
+    width: 290px;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    margin-top: 18px;
+    color: whitesmoke;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.5s ease;
+}
+ 
+.error-txt{
+    text-align: left;
+    font-size: 12px;
+    color: rgb(255, 0, 0);
+    display: none;
+}
+ 
+.input-field.error .item{
+    border-color: red;
+}
+ 
+.error .error-txt{
+    display: block;
+}
+ 
+ 
+ 
+.input-field .item:hover{
+    box-shadow: 0px 0px 10px cyan;
+    transform: scale(1.02);
+}
+ 
+#message {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    margin-top: 18px;
+    color: whitesmoke;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.5s ease;
+}
+ 
+#message:hover{
+    box-shadow: 0px 0px 10px cyan;
+    transform: scale(1.02);
+}
+ 
+ 
+form .textarea-field #message{
+    resize: none;
+}
+ 
+.btn{
+    margin-top: 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #0ef;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 13px;
+    font-weight: 180;
+    transition: box-shadow 0.3s;
+    transform: transition 0.3s;
+}
+ 
+.btn:hover{
+    box-shadow: 0px 0px 10px cyan;
+    transform: scale(1.03);
+}
+ 
+.btn:active{
+    transform: scale(1.05);
+}
+ 
+/* style2.css */
+
+/* Stil für kleine Bildschirme */
+@media screen and (max-width: 768px) {
+    .input-box {
+        flex-direction: column;
+    }
+
+    .input-field {
+        margin-bottom: 20px;
+    }
+
+    .textarea-field textarea {
+        width: 100%;
+    }
+}
